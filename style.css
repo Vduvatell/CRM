@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Inter;
+  src: local(Inter) url(fonts/MiConv.com__Inter-SemiBold.woff2) format(woff2),
+    url(fonts/MiConv.com__Inter-SemiBold.woff) format(woff);
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter) url(fonts/MiConv.com__Inter-Bold.woff2) format(woff2),
+    url(fonts/MiConv.com__Inter-Bold.woff) format(woff);
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #6E6893;
+}
+
+legend {
+  display: block;
+}

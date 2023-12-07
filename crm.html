@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/MiConv.com__Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MiConv.com__Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="checkbox.css">
+  <link rel="stylesheet" href="style.css">
+  <title>CRM-ShopOnline</title>
+</head>
+<body>
+  <div class="">
+    <h2 class="">Добавить товар</h2>
+
+    <form id="add-product" class="add-product__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <fieldset class="">
+        <label for="name">
+          <span class="">Наименование</span>
+          <input class="" type="text" id="name" name="nomination">
+        </label>
+
+        <label for="category">
+          <span class="">Категория</span>
+          <input class="" type="text" id="category" name="category">
+        </label>
+
+        <label for="units">
+          <span class="">Единицы измерения </span>
+          <input class="" type="text" id="units" name="units">
+        </label>
+
+        <label for="discount">
+          <span class="">Дисконт</span>
+          <div class="">
+            <input class="" type="checkbox" id="discount" name="discount">
+            <input class="" type="text" name="discount">
+          </div>
+        </label>
+
+        <label for="description">
+          <span class="">Описание</span>
+          <textarea class="" type="text" id="description" name="description" rows="1"></textarea>
+        </label>
+
+        <label for="quantity">
+          <span class="">Количество</span>
+          <input class="" type="text" id="quantity" name="quantity">
+        </label>
+
+        <label for="price">
+          <span class="">Цена</span>
+          <input class="" type="text" id="price" name="price">
+        </label>
+        </fieldset>
+        
+        <button class="" type="submit" form="add-product">Добавить товар</button>
+      </form>
+
+  </div>
+</body>
+</html>

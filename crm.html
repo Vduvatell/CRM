@@ -8,57 +8,77 @@
   <link rel="preload" href="fonts/MiConv.com__Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="checkbox.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="checkbox.css">
   <title>CRM-ShopOnline</title>
 </head>
 <body>
-  <div class="">
-    <h2 class="">Добавить товар</h2>
+  <div class="form-container">
+    <h2 class="form-container__title">Добавить товар</h2>
 
-    <form id="add-product" class="add-product__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-      <fieldset class="">
-        <label for="name">
-          <span class="">Наименование</span>
-          <input class="" type="text" id="name" name="nomination">
-        </label>
+    <form id="add-product" 
+          class="form-container__product add-product"
+          action="https://jsonplaceholder.typicode.com/posts" 
+          method="POST">
 
-        <label for="category">
-          <span class="">Категория</span>
-          <input class="" type="text" id="category" name="category">
-        </label>
+      <fieldset class="add-product__field field">
 
-        <label for="units">
-          <span class="">Единицы измерения </span>
-          <input class="" type="text" id="units" name="units">
-        </label>
-
-        <label for="discount">
-          <span class="">Дисконт</span>
-          <div class="">
-            <input class="" type="checkbox" id="discount" name="discount">
-            <input class="" type="text" name="discount">
-          </div>
-        </label>
-
-        <label for="description">
-          <span class="">Описание</span>
-          <textarea class="" type="text" id="description" name="description" rows="1"></textarea>
-        </label>
-
-        <label for="quantity">
-          <span class="">Количество</span>
-          <input class="" type="text" id="quantity" name="quantity">
-        </label>
-
-        <label for="price">
-          <span class="">Цена</span>
-          <input class="" type="text" id="price" name="price">
-        </label>
+        <fieldset class="field__item field__name name">
+          <label for="name">
+            <span class="field__text name__text">Наименование</span>
+            <input class="field__textarea name__textarea" type="text" id="name" name="nomination">
+          </label>
         </fieldset>
+
+        <fieldset class="field__item field__category category">
+          <label for="category">
+            <span class="field__text category__text">Категория</span>
+            <input class="field__textarea category__textarea" type="text" id="category" name="category">
+          </label>
+        </fieldset>
+
+        <fieldset class="field__item field__units units">
+          <label for="units">
+            <span class="field__text units__text">Единицы измерения </span>
+            <input class="field__textarea units__textarea" type="text" id="units" name="units">
+          </label>
+        </fieldset>
+
+        <fieldset class="field__item field__discont discont">
+          <label for="discount">
+            <span class="field__text discont__text">Дисконт</span>
+            <div class="discont__block">
+              <input class="discont__checkbox" type="checkbox" id="discount" name="discount">
+              <input class="field__textarea discont__textarea" type="text" name="discount">
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="field__item field__description description">
+          <label for="description">
+            <span class="field__text description__text">Описание</span>
+            <textarea class="field__textarea description__textarea" type="text" id="description" name="description" rows="1"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="field__item field__quantity quantity">
+          <label for="quantity">
+            <span class="field__text quantity__text">Количество</span>
+            <input class="field__textarea quantity__textarea" type="text" id="quantity" name="quantity">
+          </label>
+        </fieldset>
+
+        <fieldset class="field__item field__price price">
+          <label for="price">
+            <span class="field__text price__text">Цена</span>
+            <input class="field__textarea price__textarea" type="text" id="price" name="price">
+          </label>
+        </fieldset>
+      </fieldset>
         
-        <button class="" type="submit" form="add-product">Добавить товар</button>
-      </form>
+      <button class="add-product__button" type="submit">Добавить товар</button>
+
+    </form>
 
   </div>
 </body>

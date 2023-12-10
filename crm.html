@@ -10,11 +10,19 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="checkbox.css">
-  <title>CRM-ShopOnline</title>
+  <title>CRM</title>
 </head>
 <body>
   <div class="form-container">
     <h2 class="form-container__title">Добавить товар</h2>
+
+    <button class="form-container__close">
+      <svg class="form-container__close-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+        <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </button>
+
 
     <form id="add-product" 
           class="form-container__product add-product"
@@ -55,9 +63,9 @@
         </fieldset>
 
         <fieldset class="field__item field__description description">
-          <label for="description">
+          <label class="description__label" for="description">
             <span class="field__text description__text">Описание</span>
-            <textarea class="field__textarea description__textarea" type="text" id="description" name="description" rows="1"></textarea>
+            <textarea class="field__textarea description__textarea" type="text" id="description" name="description"></textarea>
           </label>
         </fieldset>
 
@@ -76,10 +84,11 @@
         </fieldset>
       </fieldset>
         
-      <button class="add-product__button" type="submit">Добавить товар</button>
-
+      
     </form>
 
+    <button class="form-container__button" type="submit" form="add-product">Добавить товар</button>
+    
   </div>
 </body>
 </html>

@@ -62,3 +62,7 @@
 .discont__checkbox:disabled:before {
   background-color: #cccccc;
 }
+
+.discont__checkbox:not(:checked) + .discont__textarea {
+  display: none;
+}

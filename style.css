@@ -1,6 +1,6 @@
 .overlay {
   height: 100vh;
-  background-color: #b1b1b1;
+  background-color: rgba(139, 139, 139, 0.5);;
 }
 
 .form-container {

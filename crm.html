@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/MiConv.com__Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MiConv.com__Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <title>CRM</title>
+</head>
+<body>
+  <div class="overlay">
+    <div class="form-container">
+      <h2 class="form-container__title">Добавить товар</h2>
+
+      <button class="form-container__close">
+        <svg class="form-container__close-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+          <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+
+      <form id="add-product" 
+            class="form-container__product add-product"
+            action="https://jsonplaceholder.typicode.com/posts" 
+            method="POST">
+
+        <fieldset class="add-product__field field">
+
+          <fieldset class="field__item field__name name">
+            <label for="name">
+              <span class="field__text name__text">Наименование</span>
+              <input class="field__textarea name__textarea" type="text" id="name" name="nomination">
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__category category">
+            <label for="category">
+              <span class="field__text category__text">Категория</span>
+              <input class="field__textarea category__textarea" type="text" id="category" name="category">
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__units units">
+            <label for="units">
+              <span class="field__text units__text">Единицы измерения </span>
+              <input class="field__textarea units__textarea" type="text" id="units" name="units">
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__discont discont">
+            <label for="discount">
+              <span class="field__text discont__text">Дисконт</span>
+              <div class="discont__block">
+                <input class="discont__checkbox" type="checkbox" id="discount" name="discount">
+                <input class="field__textarea discont__textarea" type="text" name="discount" disabled>
+              </div>
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__description description">
+            <label class="description__label" for="description">
+              <span class="field__text description__text">Описание</span>
+              <textarea class="field__textarea description__textarea" type="text" id="description" name="description"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__quantity quantity">
+            <label for="quantity">
+              <span class="field__text quantity__text">Количество</span>
+              <input class="field__textarea quantity__textarea" type="text" id="quantity" name="quantity">
+            </label>
+          </fieldset>
+
+          <fieldset class="field__item field__price price">
+            <label for="price">
+              <span class="field__text price__text">Цена</span>
+              <input class="field__textarea price__textarea" type="text" id="price" name="price">
+            </label>
+          </fieldset>
+        </fieldset>
+          
+        
+      </form>
+
+      <button class="form-container__button" type="submit" form="add-product">Добавить товар</button>
+      
+    </div>
+  </div>
+</body>
+</html>

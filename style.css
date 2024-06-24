@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .overlay {
   height: 100vh;
   background-color: rgba(139, 139, 139, 0.5);;
@@ -13,17 +14,33 @@
   left: 0;
   margin: auto;
   padding: 0 106px 0;
+=======
+.form-container {
+  position: relative;
+  max-width: 792px;
+  min-height: 823px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 106px 38px;
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
   background-color: #F2F0F9;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .form-container__title {
+<<<<<<< HEAD
   padding-top: 32px;
   padding-bottom: 43px;
   margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
+=======
+  margin-bottom: 43px;
+  font-size: 24px;
+  font-weight: 700;
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
@@ -34,7 +51,10 @@
   height: 28px;
   top: 20px;
   right: 30px;
+<<<<<<< HEAD
   padding: 0;
+=======
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
   background: transparent;
   border: medium;
   
@@ -45,12 +65,19 @@
   min-height: 620px;
   border-radius: 10px;
   background-color: #fff;
+<<<<<<< HEAD
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);;
 }
 
 .field {
   max-width: 524px;
   min-height: 620px;
+=======
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+
+.field {
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
   padding: 28px;
   margin: 0;
 }
@@ -61,14 +88,20 @@
 }
 
 .field__item {
+<<<<<<< HEAD
   line-height: normal;
   margin: 0;
   padding: 0 0 12px;
+=======
+  padding: 0;
+  margin-bottom: 12px;
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
 }
 
 .field__text {
   display: inline-block;
   font-style: normal;
+<<<<<<< HEAD
   padding-left: 10px;
   font-size: 12px;
   font-weight: 600;
@@ -76,6 +109,13 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   padding-bottom: 5px;
+=======
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d
 }
 
 .field__textarea {
@@ -149,6 +189,7 @@
 
 .description__textarea {
   resize: none;
+<<<<<<< HEAD
   height: 7em;
 }
 
@@ -170,3 +211,26 @@
   bottom: 28px;
   right: 134px;
 }
+=======
+  height: 9em;
+}
+
+.price {
+  margin: 0;
+}
+
+.form-container__button {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 19px;
+  padding: 10px 25px;
+  margin-top: 32px;
+  margin-inline: auto 28px;
+  border-radius: 6px;
+  background-color: #6D5BD0;
+  border: none;
+}
+>>>>>>> 68a7ee59e9160ea85d20eb618b73b32fe82ee78d

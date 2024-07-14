@@ -33,10 +33,8 @@ if (res >= 265) {
 
 const value = prompt("Сколько денег вы хотите снять?")
 
-if (value % 100 === 0) {
+if (value > 0 && value % 100 === 0) {
   console.log("Выдаём деньги");
-} else if (value > 0) {
-  console.log("Вы не можете снять такую сумму");
 } else {
-  console.log("Вы ввели некоректные данные");
+  console.log("Вы не можете снять такую сумму");
 }
